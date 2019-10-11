@@ -1,0 +1,186 @@
+// Estilos home
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.main__container {
+  position: relative;
+}
+
+.hero__svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.hero {
+  padding: 3rem;
+}
+
+.hero__text {
+  z-index: 1;
+}
+
+.features {
+  padding: 40vw 2rem 8rem 2rem;
+}
+
+.features__title,.price__title {
+  text-align: center;
+  padding: 1rem;
+}
+
+.features__graph-box {
+  width: 100%;
+  height: 25rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  overflow: hidden;
+}
+
+.features__graph {
+  width: 25rem;
+  height: 15.625rem;
+  padding: 1.5rem;
+}
+
+.features__graph object.features__svg{
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+}
+
+.features__text-box {
+  width: 100%;
+  height: 25rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.features__text {
+  text-align: left;
+  padding: 2rem;
+}
+
+.price {
+  display: flex;
+  height: 150vh;
+  padding: 8rem 2rem 8rem 2rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(../img/bg-price.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+price__title {
+  z-index: 999;
+}
+
+.price__card {
+  text-align: left;
+  margin: 5rem;
+  padding: 2rem;
+  background-color: $white;
+  z-index: 10;
+
+  p,h4 {
+    padding-bottom: 1rem;
+  }
+
+  .card__list{
+    margin: 1.5rem;
+    height: 25vh;
+  }
+
+  .card__list li{
+    padding: 0.2rem 0;
+    color: $raising-black;
+  }
+
+  .card__button {
+    text-align: center;
+    margin-top: 2rem;
+  }
+}
+
+
+@media only screen and (max-width:1200px){
+  .hero__svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+}
+
+@media only screen and (max-width:992px){
+  html {
+    font-size: 14px;
+  }
+
+  .hero__svg {
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    z-index: 0;
+  }
+
+  .features__graph-box {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+@media only screen and (max-width:768px){
+  html {
+    font-size: 14px;
+  }
+
+  .hero__svg {
+    position: absolute;
+    top: 15rem;
+    left: 0;
+    z-index: 0;
+  }
+
+  .features {
+    margin-top: 5rem;
+  }
+
+  .features__graph-box {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  html {
+    font-size: 12px;
+  }
+
+  .hero__svg {
+    position: absolute;
+    top: 30rem;
+    left: 0;
+    z-index: 0;
+  }
+
+  .features__graph-box {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .price {
+    width: 100%;
+    height: 200%;
+  }
+
+}

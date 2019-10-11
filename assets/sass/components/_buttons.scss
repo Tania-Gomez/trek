@@ -1,0 +1,70 @@
+// Estilos de botones
+
+.navigation__buttons {
+  display: flex;
+  visibility: visible;
+}
+
+.navigation__buttons--primary{
+  position: absolute;
+  right: 3rem;
+  width: 8rem;
+  font-family: $raleway;
+  font-size: $small;
+  padding: .6rem;
+  text-align: center;
+  text-decoration: none;
+  background-color: $ball-blue;
+  color: $white;
+  &:hover {
+    background-color: $middle-blue;
+    color: $white;
+  }
+  &:focus {
+    background-color: $gray;
+    color: $white;
+  }
+}
+
+.navigation__buttons--secondary {
+  position: absolute;
+  right: 13rem;
+  width: 8rem;
+  font-family: $raleway;
+  font-size: $small;
+  padding: .6rem;
+  text-align: center;
+  text-decoration: none;
+  background-color: $white;
+  color: $raising-black;
+  &:hover {
+    border: 1px solid $middle-blue;
+  }
+  &:focus {
+    border: 1px solid $spanish-gray;
+  }
+}
+
+.card__button--primaryLG{
+  font-family: $raleway;
+  font-size: $small;
+  padding: .7rem 3.5rem;
+  text-align: center;
+  text-decoration: none;
+  background-color: $ball-blue;
+  color: $white;
+  &:hover {
+    background-color: $middle-blue;
+    color: $white;
+  }
+  &:focus {
+    background-color: $gray;
+    color: $white;
+  }
+}
+
+@media only screen and (max-width:992px){
+  .navigation__buttons {
+    visibility: hidden;
+  }
+}
